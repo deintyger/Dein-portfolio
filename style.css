@@ -1,0 +1,241 @@
+/* title font */
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: linear-gradient(#e4c89f, #310a0b);
+  height: 420vh;
+  scroll-behavior: smooth;
+}
+
+.main-image {
+  opacity: 0.85;
+  border-radius: 25px;
+  border-style: groove;
+  margin-left: 850px;
+  box-shadow: 0px 0px 10px 7px rgba(0, 0, 0, 0.2);
+  margin-top: -50%;
+}
+
+.main-image:hover {
+  box-shadow: 0px 0px 15px 20px rgba(252, 252, 252, 0.5);
+  border: 2px solid black;
+}
+
+.hero-container {
+  padding-top: 200px;
+}
+
+.hero-maintext,
+.hero-subtext {
+  font-family: monospace;
+  padding-left: 60px;
+}
+
+.hero-maintext {
+  font-size: 36px;
+}
+
+.hero-maintext span {
+  font-size: 96px;
+  font-family: "Abril fatface";
+  letter-spacing: -5px;
+}
+
+.hero-maintext span:hover {
+  color: #310a0b;
+  cursor: default;
+}
+
+.hero-subtext {
+  font-size: 40px;
+}
+
+.hero-subtext::after {
+  content: "";
+  padding: 15px;
+  margin: 10px;
+  border-radius: 10px;
+  animation-name: wordswap;
+  animation-duration: 30s;
+  animation-delay: 0.25s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+@keyframes wordswap {
+  0% {
+    content: "Web Developer";
+  }
+  25% {
+    content: "Graphic Designer";
+  }
+  50% {
+    content: "Student";
+  }
+  75% {
+    content: "Writer";
+  }
+  100% {
+    content: "Web Developer";
+  }
+}
+
+.project-container {
+  padding-top: 250px;
+}
+
+.tindog-reference {
+  margin-left: 60px;
+  border-radius: 25px;
+  opacity: 0.9;
+  box-shadow: 0px 0px 10px 7px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  vertical-align: top;
+}
+
+.tindog-reference:hover {
+  box-shadow: 0px 0px 10px 10px #310a0b8e;
+}
+
+.project-text {
+  margin-left: 250px;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: -40px;
+}
+
+.project-header {
+  font-family: "Abril fatface";
+  font-size: 90px;
+  margin-bottom: 15px;
+  letter-spacing: -2px;
+  text-align: center;
+}
+
+.project-header:hover {
+  color: #310a0bce;
+  cursor: default;
+}
+
+.project-subtext {
+  font-family: monospace;
+  font-size: 40px;
+  text-align: center;
+  width: 400px;
+}
+
+.aboutme-container {
+  padding-top: 200px;
+}
+
+.aboutme-maintext {
+  font-family: "Abril fatface";
+  font-size: 90px;
+  letter-spacing: -2px;
+  width: fit-content;
+}
+.aboutme-maintext:hover {
+  color: #310a0bce;
+  cursor: default;
+}
+
+.aboutme-subtext {
+  font-family: monospace;
+  font-size: 40px;
+  text-align: center;
+  width: 400px;
+}
+
+.aboutme-maintext,
+.aboutme-subtext {
+  padding-left: 60px;
+}
+
+.image-3d {
+  display: inline-block;
+  margin-left: 60%;
+  margin-top: -530px;
+  border-radius: 25px;
+  opacity: 0.9;
+  box-shadow: 0px 0px 10px 7px rgba(0, 0, 0, 0.2);
+  border-style: groove;
+}
+
+.image-3d:hover,
+.resume-image:hover {
+  box-shadow: 0px 0px 10px 10px #cc8587ce;
+}
+
+.contactme-container {
+  padding-top: 200px;
+}
+
+.contactme-text1,
+.contactme-text2,
+.contactme-text3 {
+  font-family: "Abril fatface";
+  font-size: 90px;
+  letter-spacing: -2px;
+  width: fit-content;
+  padding: -5px;
+  padding-left: 60px;
+}
+
+.contactme-text1:hover {
+  color: #310a0bce;
+}
+
+.contactme-text2:hover {
+  color: rgba(245, 245, 245, 0.705);
+}
+
+.contactme-text2 {
+  margin-left: 100px;
+  padding-left: 170px;
+}
+
+.contactme-text3:hover {
+  color: wheat;
+}
+
+.contact-list {
+  position: relative;
+}
+
+.contact-sub-list {
+  list-style-type: none;
+  margin-left: 60%;
+  margin-top: -5px;
+  display: block;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
+  color: rgba(245, 222, 179, 0.664);
+}
+
+.contact-sub-list-link {
+  text-decoration: none;
+  color: rgba(245, 222, 179, 0.664);
+}
+
+.contact-sub-list-link:hover {
+  color: rgba(245, 245, 245, 0.705);
+  text-decoration: underline;
+}
+
+.email-list {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 33px;
+  font-weight: 900;
+  color: rgba(245, 222, 179, 0.664);
+  text-decoration: underline;
+  margin-top: -500px;
+  margin-left: 63%;
+  list-style-type: none;
+  display: block;
+}
+
+.email-list:hover {
+  color: rgba(245, 245, 245, 0.705);
+}
