@@ -241,7 +241,7 @@ html {
   .hero-subtext,
   .aboutme-maintext,
   .aboutme-subtext {
-    padding-left: 12px;
+    padding-left: 20px;
   }
 
   .project-header {
@@ -259,7 +259,7 @@ html {
   .aboutme-subtext {
     font-size: 15px;
     text-align: start;
-    padding-left: 12px;
+    padding-left: 20px;
     width: 50%;
   }
 
@@ -269,8 +269,8 @@ html {
 
   /* Adjust image sizes and margins */
   .main-image {
-    width: 130px;
-    height: 130px;
+    width: 150px;
+    height: 150px;
     margin-left: 58%;
   }
 
@@ -288,8 +288,8 @@ html {
 
   .image-3d {
     margin-top: -350px;
-    width: 130px;
-    height: 130px;
+    width: 150px;
+    height: 150px;
     margin-left: 58%;
   }
 
