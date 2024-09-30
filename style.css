@@ -5,8 +5,9 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-image: linear-gradient(#e4c89f, #310a0b);
-  height: 388vh;
+  /*   background-image: linear-gradient(#e4c89f, #310a0b); */
+  background-color: #e4c89f;
+  height: 200vh;
   scroll-behavior: smooth;
 }
 
@@ -14,7 +15,7 @@ html {
   opacity: 0.85;
   border-radius: 25px;
   border-style: groove;
-  margin-left: 850px;
+  margin-left: 730px;
   box-shadow: 0px 0px 10px 7px rgba(0, 0, 0, 0.2);
   margin-top: -50%;
 }
@@ -83,47 +84,60 @@ html {
 }
 
 .project-container {
-  padding-top: 250px;
+  padding-top: 180px;
+  padding-left: 60px;
+  padding-bottom: 70px;
 }
 
 .tindog-reference {
-  margin-left: 60px;
-  border-radius: 25px;
-  opacity: 0.9;
-  box-shadow: 0px 0px 10px 7px rgba(0, 0, 0, 0.2);
-  display: inline-block;
-  vertical-align: top;
+  height: 230px;
+  width: 230px;
+  border-radius: 20px;
+  margin-top: 50px;
+}
+
+.tindog-link a {
+  text-decoration: none;
+  color: black;
+  padding-left: 45px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.tindog-link a:hover {
+  text-decoration: underline;
+  color: #310a0b;
 }
 
 .tindog-reference:hover {
-  box-shadow: 0px 0px 10px 10px #310a0b8e;
-}
-
-.project-text {
-  margin-left: 220px;
-  display: inline-block;
-  vertical-align: top;
-  margin-top: -40px;
+  box-shadow: 0px 0px 10px 10px #cc8587ce;
 }
 
 .project-header {
   font-family: "Abril fatface";
   font-size: 80px;
-  margin-bottom: 15px;
-  letter-spacing: -2px;
-  text-align: center;
+  letter-spacing: -1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .project-header:hover {
-  color: #310a0bce;
-  cursor: default;
+  color: #310a0b;
 }
 
 .project-subtext {
   font-family: monospace;
   font-size: 30px;
-  text-align: center;
-  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-header,
+.project-subtext {
+  line-height: 2.5px;
 }
 
 .aboutme-container {
@@ -173,33 +187,219 @@ html {
 }
 
 .contactme-letter1 {
-  font-size: 80px;
+  font-size: 60px;
   font-family: "Abril fatface";
   letter-spacing: -1px;
   text-align: center;
   margin-bottom: -15px;
 }
 
-.contactme-letter2,
-.contactme-letter3 {
-  font-size: 30px;
-  font-family: monospace;
-  text-align: center;
+.contactme-letter1:hover {
+  color: #310a0b;
 }
 
 .icon-image {
-  display: inline-block;
-  padding-left: 50%;
-  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
 }
 
 .contact-icon1:hover,
 .contact-icon2:hover {
   cursor: pointer;
-  transform: scale(1.1);
+  transform: scale(1.5);
   background-color: #e4c89fa4;
 }
 
 .contact-icon2:hover {
   border-radius: 50%;
+}
+
+/* Mobile devices (320px-480px) */
+@media only screen and (max-width: 480px) {
+  html {
+    height: 100vh;
+  }
+
+  /* Adjust font sizes and padding */
+
+  .hero-maintext {
+    font-size: 15px;
+  }
+
+  .hero-maintext span {
+    font-size: 38px;
+  }
+
+  .hero-subtext {
+    font-size: 15px;
+  }
+
+  .hero-maintext,
+  .hero-subtext,
+  .aboutme-maintext,
+  .aboutme-subtext {
+    padding-left: 20px;
+  }
+
+  .project-header {
+    font-size: 30px;
+  }
+
+  .project-subtext {
+    font-size: 15px;
+  }
+
+  .aboutme-maintext {
+    font-size: 30px;
+  }
+
+  .aboutme-subtext {
+    font-size: 15px;
+    text-align: start;
+    padding-left: 20px;
+    width: 50%;
+  }
+
+  .contactme-letter1 {
+    font-size: 20px;
+  }
+
+  /* Adjust image sizes and margins */
+  .main-image {
+    width: 150px;
+    height: 150px;
+    margin-left: 58%;
+  }
+
+  .tindog-reference {
+    height: 100px;
+    width: 100px;
+    margin-top: 20px;
+    border-radius: 15px;
+  }
+
+  .tindog-link a {
+    font-size: 14px;
+    padding-left: 0px;
+  }
+
+  .image-3d {
+    margin-top: -350px;
+    width: 150px;
+    height: 150px;
+    margin-left: 58%;
+  }
+
+  /* Adjust container paddings */
+
+  .hero-container {
+    padding-top: 100px;
+  }
+
+  .project-container {
+    padding-top: 90px;
+    padding-left: 20px;
+    padding-bottom: 40px;
+  }
+
+  .aboutme-container {
+    padding-top: 60px;
+  }
+
+  .contactme-container {
+    margin-top: 100px;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 810px) {
+  html {
+    height: 100vh;
+  }
+  /* Adjust font sizes and padding*/
+
+  .hero-maintext {
+    font-size: 20px;
+  }
+
+  .hero-maintext span {
+    font-size: 58px;
+  }
+
+  .hero-subtext {
+    font-size: 25px;
+  }
+
+  .project-header {
+    font-size: 56px;
+  }
+
+  .project-subtext {
+    font-size: 20px;
+  }
+
+  .aboutme-maintext {
+    font-size: 56px;
+  }
+
+  .aboutme-subtext {
+    font-size: 20px;
+    text-align: center;
+    padding-left: 30px;
+    width: 40%;
+  }
+
+  .contactme-letter1 {
+    font-size: 40px;
+  }
+
+  /* Adjust image sizes and margins */
+
+  .main-image {
+    width: 230px;
+    height: 230px;
+    margin-left: 58%;
+  }
+
+  .tindog-reference {
+    height: 170px;
+    width: 170px;
+    margin-top: 60px;
+    border-radius: 20px;
+    margin-left: 30px;
+  }
+
+  .tindog-link a {
+    font-size: 16px;
+    padding-left: 47px;
+  }
+
+  .image-3d {
+    margin-top: -250px;
+    width: 230px;
+    height: 230px;
+    margin-left: 58%;
+  }
+
+  /* Adjust container paddings */
+
+  .hero-container {
+    padding-top: 120px;
+  }
+
+  .project-container {
+    padding-top: 100px;
+    padding-left: 30px;
+    padding-bottom: 50px;
+  }
+
+  .aboutme-container {
+    padding-top: 60px;
+  }
+
+  .contactme-container {
+    margin-top: 190px;
+  }
 }
