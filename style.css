@@ -12,6 +12,7 @@ html {
 }
 
 .main-image {
+  display:inline-block;
   opacity: 0.85;
   border-radius: 25px;
   border-style: groove;
