@@ -15,7 +15,7 @@ html {
   opacity: 0.85;
   border-radius: 25px;
   border-style: groove;
-  margin-left: 60%;
+  margin-left: 730px;
   box-shadow: 0px 0px 10px 7px rgba(0, 0, 0, 0.2);
   margin-top: -50%;
 }
@@ -36,7 +36,7 @@ html {
 }
 
 .hero-maintext {
-  font-size: 30px;
+  font-size: 28px;
 }
 
 .hero-maintext span {
@@ -51,7 +51,7 @@ html {
 }
 
 .hero-subtext {
-  font-size: 35px;
+  font-size: 30px;
 }
 
 .hero-subtext::after {
@@ -129,7 +129,7 @@ html {
 
 .project-subtext {
   font-family: monospace;
-  font-size: 30px;
+  font-size: 28px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -157,7 +157,7 @@ html {
 
 .aboutme-subtext {
   font-family: monospace;
-  font-size: 30px;
+  font-size: 28px;
   text-align: center;
   width: 350px;
 }
@@ -241,7 +241,7 @@ html {
   .hero-subtext,
   .aboutme-maintext,
   .aboutme-subtext {
-    padding-left: 20px;
+    padding-left: 10px;
   }
 
   .project-header {
@@ -259,7 +259,7 @@ html {
   .aboutme-subtext {
     font-size: 15px;
     text-align: start;
-    padding-left: 20px;
+    padding-left: 10px;
     width: 50%;
   }
 
@@ -269,8 +269,8 @@ html {
 
   /* Adjust image sizes and margins */
   .main-image {
-    width: 150px;
-    height: 150px;
+    width: 135px;
+    height: 140px;
     margin-left: 58%;
   }
 
@@ -288,8 +288,8 @@ html {
 
   .image-3d {
     margin-top: -350px;
-    width: 150px;
-    height: 150px;
+    width: 135px;
+    height: 140px;
     margin-left: 58%;
   }
 
@@ -301,7 +301,7 @@ html {
 
   .project-container {
     padding-top: 90px;
-    padding-left: 12px;
+    padding-left: 10px;
     padding-bottom: 40px;
   }
 
